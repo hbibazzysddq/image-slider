@@ -1,0 +1,24 @@
+body{
+    background-color: #181C14;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+}
+.container img{
+    background: var(--bg) center;
+    background-size: cover; 
+    flex-basis:300px;
+    position:relative;
+    transition: 400ms all ease;
+    filter: grayscale(100%) opacity(35%);
+}
+
+.container img:hover{
+    flex-basis: 400px;
+    filter: grayscale(0%) opacity(100%);
+}
